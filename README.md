@@ -273,10 +273,27 @@ BOT/
 ├── setup.py               # Installation helper
 ├── requirements.txt       # Dependencies
 ├── README.md             
+├── ASSISTANT_RULES.md     # 📘 Development rules & standards
+├── QUICK_REFERENCE.md     # 📌 Quick command reference
 ├── LICENSE               
 ├── CHANGELOG.md          
 └── .gitignore           
 ```
+
+## 📋 Development Rules & Guidelines
+
+Project ini dilengkapi dengan comprehensive development rules:
+
+### Documentation Files:
+- 📘 **[ASSISTANT_RULES.md](ASSISTANT_RULES.md)** - Complete AI assistant operating rules
+  - Code standards, security protocols, testing requirements
+  - Problem-solving framework & best practices
+  - Emergency procedures & performance guidelines
+
+- 📌 **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Quick access guide
+  - Essential commands & project structure
+  - Debugging steps & code review checklists
+  - Common fixes & emergency procedures
 
 ## 🔒 Security Notes
 
