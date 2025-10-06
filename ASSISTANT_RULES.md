@@ -77,6 +77,32 @@ Brief explanation of what I'm doing
 3. **Identify Dependencies**: Check imports and requirements
 4. **Plan Approach**: Break into smaller tasks
 
+## 5A. Git Visual Commit Rules
+
+### 5A.1 Mandatory Visual Display
+- **ALWAYS** show branch graph after commits
+- **ALWAYS** use visual tools: `python git_visual.py` or aliases
+- **NEVER** commit without displaying visualization
+- **ALWAYS** include graph in response when discussing commits
+
+### 5A.2 Commit Workflow
+```bash
+# Required sequence
+1. git add .
+2. git commit -m "type(scope): description"
+3. git graph -10  # MANDATORY - Show visual
+4. git push origin branch-name
+5. git graph --all  # MANDATORY - Show all branches
+```
+
+### 5A.3 Visual Aliases to Use
+- `git graph` - Beautiful branch visualization
+- `git tree` - Tree structure view  
+- `git lg` - Colored log graph
+- `git cv` - Commit with visual
+- `git sg` - Status + graph
+- `git pg` - Push + graph
+
 ### 5.2 Implementation Phase
 1. **Incremental Changes**: Small, testable modifications
 2. **Test Frequently**: Verify each change works
@@ -180,6 +206,30 @@ project/
 2. **Assess Damage**: Check what was affected
 3. **Report Clearly**: Explain the issue
 4. **Suggest Recovery**: Provide fix options
+
+## 13. Git Visual Requirements
+
+### 13.1 Every Commit Must:
+- Display branch graph visualization
+- Use semantic commit format: `type(scope): description`
+- Show at least 10 commits in graph
+- Include branch decorations and colors
+
+### 13.2 Example Response Format:
+```markdown
+Committed your changes:
+
+📊 Git Graph:
+* a1b2c3d (HEAD -> feature/new) just now feat: add feature
+* d4e5f6g (origin/main) 2 hours ago fix: bug fix
+
+✅ Pushed to origin/feature/new
+```
+
+### 13.3 Tools to Use:
+- `git_visual.py` - Interactive visual manager
+- `GIT_VISUAL.bat` - Windows launcher
+- Git aliases: graph, tree, lg, cv, sg, pg
 
 ### 12.2 Data Loss Prevention
 - **Confirm Destructive Actions**: Double-check deletions
